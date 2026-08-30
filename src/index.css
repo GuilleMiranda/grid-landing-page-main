@@ -7,7 +7,7 @@
   --blue-700: hsl(228, 99%, 58%);
 
   --black: hsl(0, 0%, 0%);
-  --black-transparen: hsla(0, 0%, 0%, 25%);
+  --black-transparent: hsla(0, 0%, 0%, 25%);
 }
 
 body {
@@ -15,6 +15,16 @@ body {
   padding: 0;
   background-color: var(--blue-400);
   color: var(--white);
+  border: 2px solid aquamarine;
+  min-height: 100vh;
+}
+
+.menu-closed {
+  display: none;
+}
+
+.menu-open {
+  display: block;
 }
 
 .container {
