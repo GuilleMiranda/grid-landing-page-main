@@ -1,13 +1,15 @@
-import { useState } from "react";
 import { type MenuType } from "./types/MenuProps";
 
 const Menu = (props: MenuType) => {
   return (
-    <div className={props.isActive ? "menu-open" : "menu-closed"}>
-      <p>menu</p>
-      <p>menu</p>
-      <p>menu</p>
-      <p>menu</p>
+    <div className={`menu ${props.isActive ? "menu-open" : "menu-closed"}`}>
+      <ul>
+        <li>About</li>
+        <li>Our Work</li>
+        <li>Partners</li>
+        <li>Annual Report</li>
+        <li>Donate</li>
+      </ul>
     </div>
   );
 };

@@ -13,10 +13,30 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--blue-400);
+  background-color: var(--blue-700);
   color: var(--white);
   border: 2px solid aquamarine;
   min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: auto;
+}
+
+.menu {
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 1;
+
+  background-color: var(--blue-400);
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 .menu-closed {
@@ -27,14 +47,10 @@ body {
   display: block;
 }
 
-.container {
-  display: grid;
-  grid-auto-columns: 1fr;
-  grid-auto-rows: auto;
-}
-
 .hero {
   border: 1px solid red;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .info {
